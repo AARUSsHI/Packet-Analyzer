@@ -16,7 +16,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# api_key="AIzaSyCIVgLu-1lfBHFqaHXGhzxEDmq3hFrU4bw"
+# api_key=""
 # llm = GooglePalm(google_api_key=api_key,temprature=0.6)
 # This is my "103.216.15.12" source ip address and this is my destination Ip address "84.9.164.252" .
 # my source port is "31225" destination port is "17616" protocol is "icmp" and 
@@ -35,7 +35,7 @@ print("Model loaded successfully.")
 @app.route('/convert', methods=['POST'])
 def convert():
 
-    api_key="AIzaSyCIVgLu-1lfBHFqaHXGhzxEDmq3hFrU4bw"
+    api_key=""
     llm = GooglePalm(google_api_key=api_key,temprature=0.7)
 
     if request.method == 'POST':
